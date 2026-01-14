@@ -13,16 +13,28 @@ import { ImQuotesLeft } from "react-icons/im";
 // data
 const testimonial = [
     {
-        message: "Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.",
-        name : "Arena",
+        message: "Expertise Full-Stack précieuse pour l'évolution de nos solutions ERP internes.",
+        name : "Manao",
     },
     {
-        message: "Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.",
-        name : "Arena",
+        message: "Réalisation exemplaire du site institutionnel et maintenance rigoureuse du parc.",
+        name : "ONG",
     },
     {
-        message: "Lorem ipsum dolor sit amet consectetur adipisicing consectetur elit.",
-        name : "Arena",
+        message: "Développement agile de plateformes web et mobiles innovantes avec NodeJS et React.",
+        name : "Origami",
+    },
+    {
+        message: "Logiciel de gestion de présence robuste développé avec succès sous Symfony.",
+        name : "ENI",
+    },
+    {
+        message: "Digitalisation efficace des services fiscaux grâce à sa maîtrise de Laravel.",
+        name : "DRI",
+    },
+    {
+        message: "Solution de numérisation de diplômes sécurisée et parfaitement adaptée au MEN.",
+        name : "MEN",
     },
 ];
 
@@ -30,7 +42,7 @@ const testimonial = [
 const Testimonial = () => {
     return (
         <Swiper 
-            //modules={[Autoplay]} 
+            modules={[Autoplay]} 
             loop={false} 
             autoplay={{ delay: 4000, disableOnInteraction: false }} 
             className="w-full max-w-[310px] md:max-w-[520px] bg-secondary rounded-lg"

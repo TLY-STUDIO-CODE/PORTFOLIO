@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { 
     BiLogoFacebook, 
     BiLogoInstagramAlt, 
@@ -8,19 +9,19 @@ import {
 const socials = [
     {
         icon: <BiLogoFacebook />,
-        path: "",
+        path: "https://web.facebook.com/yasser.raza.581689/",
     },
     {
         icon: <BiLogoInstagramAlt />,
-        path: "",
+        path: "https://www.instagram.com/tly_studio_code143",
     },
     {
         icon: <BiLogoDribbble />,
-        path: "",
+        path: "https://discord.gg/5Kz8maD7",
     },
     {
         icon: <BiLogoLinkedin />,
-        path: "",
+        path: "https://www.linkedin.com/in/tsilaky143",
     },
 ];
 
@@ -29,9 +30,15 @@ const Socials = ({containerStyles, iconStyles}) => {
         <div className={containerStyles}>
             {socials.map((item, index)=> {
                 return (
-                    <div key={index} className={iconStyles}>
+                    <Link 
+                        key={index} 
+                        href={item.path} 
+                        className={iconStyles}
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
                         {item.icon}
-                    </div>
+                    </Link>
                 );
             })}
         </div>

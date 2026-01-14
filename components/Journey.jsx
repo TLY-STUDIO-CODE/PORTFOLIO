@@ -6,12 +6,12 @@ const journey = [
     },
     {
         years: "2023 - 2024",
-        role: "Master Professionnel en Informatique",
+        role: "Master Professionnel",
         institution: "École Nationale d'Informatique",
     },
     {
         years: "2021 - 2022",
-        role: "Licence Professionnelle en Informatique",
+        role: "Licence Professionnelle",
         institution: "École Nationale d'Informatique",
     },
     {
