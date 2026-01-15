@@ -6,16 +6,16 @@ import { MdFileDownload } from "react-icons/md";
 
 const MainNav = () => {
     const handleDownload = () => {
-        const fileUrl = "/assets/Docs/CV_TSILAKY_DEVELOPPEUR_WEB.pdf";
-        const fileName = "CV_TSILAKY_DEVELOPPEUR_WEB.pdf";
+        const fileUrl = "/assets/Docs/CV_TSILAKY_DEV_FULLSTACK.pdf";
+        const fileName = "CV_TSILAKY_DEV_FULLSTACK.pdf";
 
-        
+        // Création du lien
         const link = document.createElement("a");
         link.href = fileUrl;
         link.setAttribute("download", fileName);
-        link.setAttribute("target", "_blank"); 
+        link.setAttribute("target", "_blank"); // Important pour la compatibilité mobile
         
-        
+        // Ajout temporaire au DOM pour garantir le clic sur tous les navigateurs
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
