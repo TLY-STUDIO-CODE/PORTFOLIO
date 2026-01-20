@@ -6,8 +6,8 @@ import { MdFileDownload } from "react-icons/md";
 
 const MainNav = () => {
     const handleDownload = () => {
-        const fileUrl = "/assets/Docs/CV_TSILAKY_DEVELOPPEUR_WEB.pdf";
-        const fileName = "CV_TSILAKY_DEVELOPPEUR_WEB.pdf";
+        const fileUrl = "/assets/Docs/DEVELOPPEUR_FULLSTACK_JS_TS.pdf";
+        const fileName = "DEVELOPPEUR_FULLSTACK_JS_TS.pdf";
 
         
         const link = document.createElement("a");
